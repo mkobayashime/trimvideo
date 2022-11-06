@@ -6,6 +6,8 @@
   "devDependencies": {
     "@mkobayashime/eslint-config": "^0.2.0",
     "@mkobayashime/eslint-config-typescript": "^0.1.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
     "@types/node": "^18.11.7",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
@@ -14,6 +16,8 @@
     "eslint-import-resolver-typescript": "^3.5.1",
     "eslint-plugin-import": "^2.26.0",
     "prettier": "^2.7.1",
+    "rollup": "^3.2.5",
+    "rollup-plugin-version-injector": "^1.3.3",
     "typescript": "^4.8.4"
   }
 }

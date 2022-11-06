@@ -1,3 +1,5 @@
+rollup = yarn run rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript
+
 node_modules: package.json yarn.lock
 	yarn
 	@touch node_modules
@@ -21,6 +23,14 @@ format.check: node_modules
 .PHONY: clear
 clear:
 	rm -rf dist
+
+.PHONY: dev
+dev: node_modules
+	$(rollup) --watch
+
+.PHONY: build
+build: node_modules clear
+	$(rollup)
 
 .PHONY: typecheck
 typecheck: node_modules
