@@ -14,7 +14,7 @@ const config: RollupOptions = {
     entryFileNames: "[name].js",
     format: "commonjs",
     strict: false,
-    intro: `#!/usr/bin/env node\n\n// version: ${version}`,
+    intro: `#!/usr/bin/env node\n\n// @mkobayashime/trimvideo v${version}\n// https://github.com/mkobayashime/trimvideo`,
   },
   plugins: [typescript(), nodeResolve()],
 }
