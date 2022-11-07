@@ -1,9 +1,13 @@
 {
   "name": "@mkobayashime/trimvideo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Masaki Kobayashi <contact@mkobayashi.me>",
   "private": false,
   "bin": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkobayashime/trimvideo.git"
+  },
   "devDependencies": {
     "@mkobayashime/eslint-config": "^0.2.0",
     "@mkobayashime/eslint-config-typescript": "^0.1.2",
