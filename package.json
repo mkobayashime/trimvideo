@@ -1,6 +1,6 @@
 {
   "name": "@mkobayashime/trimvideo",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "Masaki Kobayashi <contact@mkobayashi.me>",
   "private": false,
   "bin": "dist/index.js",
