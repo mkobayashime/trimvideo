@@ -1,4 +1,5 @@
 import { spawn } from "child_process"
+import { existsSync } from "node:fs"
 import rl from "node:readline"
 
 import { calcDiffSeconds } from "./calcDiffSeconds"
@@ -18,6 +19,11 @@ void (async () => {
   }
 
   const [src, dist] = args
+
+  if (!existsSync(src)) {
+    console.error("Fatal: Original video not found in the path provided.")
+    process.exit(1)
+  }
 
   const readline = rl.createInterface({
     input: process.stdin,
