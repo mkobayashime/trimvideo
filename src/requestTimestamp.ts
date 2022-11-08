@@ -14,8 +14,6 @@ export const requestTimestamp = async (
   readline: ReadlineInterface,
   prompt: string
 ) => {
-  let count = 0
-
   // eslint-disable-next-line no-constant-condition
   while (true) {
     const input = await readKeyboardInput(readline, prompt)
@@ -41,8 +39,5 @@ export const requestTimestamp = async (
         break
       }
     }
-
-    if (count > 10) process.exit(1)
-    count++
   }
 }

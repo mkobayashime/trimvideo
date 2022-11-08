@@ -32,16 +32,7 @@ void (async () => {
   })
 
   const startsAt = await requestTimestamp(readline, "starts at: ")
-  if (!startsAt) {
-    console.error("Fatal: Exiting...")
-    process.exit(1)
-  }
-
   const endsAt = await requestTimestamp(readline, "ends at: ")
-  if (!endsAt) {
-    console.error("Fatal: Exiting...")
-    process.exit(1)
-  }
 
   readline.close()
 
